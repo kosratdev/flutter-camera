@@ -7,15 +7,15 @@ import 'package:flutter_camera/camera/widgets/top_controls/top_camera_controls.d
 import 'package:flutter_camera/camera/widgets/camera_preview/app_camera_preview.dart';
 
 /// A screen that displays the camera preview and allows the user to take pictures.
-class CameraScreen extends StatefulWidget {
-  const CameraScreen({required this.cameras, super.key});
+class FlutterCameraScreen extends StatefulWidget {
+  const FlutterCameraScreen({required this.cameras, super.key});
 
   final List<CameraDescription> cameras;
   @override
-  State<CameraScreen> createState() => _CameraScreenState();
+  State<FlutterCameraScreen> createState() => _FlutterCameraScreenState();
 }
 
-class _CameraScreenState extends State<CameraScreen>
+class _FlutterCameraScreenState extends State<FlutterCameraScreen>
     with WidgetsBindingObserver {
   CameraController? _controller;
   XFile? _imageFile;
